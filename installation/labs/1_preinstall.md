@@ -41,4 +41,6 @@ xvda                                                brw-rw----
 	2a00:1450:4001:80b::200e STREAM
 	2a00:1450:4001:80b::200e DGRAM
 	2a00:1450:4001:80b::200e RAW
-7)
+7-8) these 2 services were not installed, therefor i installed them with yum install ntp, yum install nscd.
+	 to start them -> service nscd start, service ntpd start
+	 to show the status -> service nscd status, service ntpd status
