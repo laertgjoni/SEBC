@@ -1,3 +1,4 @@
+```
 [ernest@ip-172-31-37-209 hadoop-0.20-mapreduce]$ time hadoop jar hadoop-examples.jar teragen -Dmapreduce.job.maps=6 51200000 user/ernest/results/tgen512m_0/
 17/10/20 09:36:20 INFO client.RMProxy: Connecting to ResourceManager at ip-172-31-32-147.eu-central-1.compute.internal/172.31.32.147:8032
 17/10/20 09:36:21 INFO terasort.TeraSort: Generating 51200000 using 6
@@ -95,7 +96,8 @@ user    0m5.520s
 sys     0m0.250s
 
 #mistake [i made a mistake in the teragen command i used the whole path so the /user/ernest part is redundant]
-
+```
+```
 [ernest@ip-172-31-37-209 hadoop-0.20-mapreduce]$ hdfs dfs -ls /user/ernest/user/ernest/results/tgen512m_0
 Found 7 items
 -rw-r--r--   3 ernest usa          0 2017-10-20 09:37 /user/ernest/user/ernest/results/tgen512m_0/_SUCCESS
@@ -105,3 +107,5 @@ Found 7 items
 -rw-r--r--   3 ernest usa  853333400 2017-10-20 09:37 /user/ernest/user/ernest/results/tgen512m_0/part-m-00003
 -rw-r--r--   3 ernest usa  853333300 2017-10-20 09:37 /user/ernest/user/ernest/results/tgen512m_0/part-m-00004
 -rw-r--r--   3 ernest usa  853333300 2017-10-20 09:37 /user/ernest/user/ernest/results/tgen512m_0/part-m-00005
+```
+@mfernest: Missing HDFS block report
