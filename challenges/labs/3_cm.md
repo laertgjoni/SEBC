@@ -1,10 +1,12 @@
+```
 [root@ip-172-31-37-209 /]# hdfs dfs -ls /user
 Found 3 items
 drwxr-xr-x   - hdfs   supergroup          0 2017-10-20 09:18 /user/ernest
 drwxrwxrwx   - mapred hadoop              0 2017-10-20 09:15 /user/history
 drwxr-xr-x   - hdfs   supergroup          0 2017-10-20 09:18 /user/siwicki
-
-
+```
+@mfernest: Note you haven't changed the permissions for the test users. As hdfs superuser-owned directories, their intended purpose as test users is defeated. 
+```
 {
 	"items": [
 		{
@@ -61,3 +63,7 @@ drwxr-xr-x   - hdfs   supergroup          0 2017-10-20 09:18 /user/siwicki
 		}
 	]
 }
+
+```
+The requirements call for the command invocation along with the output.
+```
